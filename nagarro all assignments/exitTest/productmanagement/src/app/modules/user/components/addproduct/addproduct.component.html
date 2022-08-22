@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<section>
+
+<form [formGroup]="userForm" class="form1 mx-auto" (ngSubmit)="userSubmit()">
+    <div class="form-group mx-auto mt-5">
+      <div *ngIf="check">
+        <p style="color: red;">{{message}}!!</p>
+        </div>
+      <label for="exampleInputEmail1">Product Brand</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="brand" aria-describedby="emailHelp" placeholder="Product Brand" required ngModal>
+    </div>
+    <div class="form-group mx-auto">
+      <label for="exampleInputPassword1">Product Name</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="name" required ngModal placeholder="Product Name">
+    </div>
+    <div class="form-group mx-auto">
+        <label for="exampleInputPassword1">Product Code</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="productCode" required ngModal placeholder="Product Code">
+      </div>
+
+      <div class="form-group mx-auto">
+        <label for="exampleInputPassword1">Image</label>
+        <input type="file" class="form-control" id="exampleInputPassword1" formControlName="image" required ngModal placeholder="image">
+      </div>
+
+      <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-danger mx-auto">Submit</button>
+    </div>
+
+    <!-- <div>
+      <button mat-raised-button (click)="openDialog()">dailog</button>
+    </div> -->
+  </form>
+  </section>

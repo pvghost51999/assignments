@@ -1,0 +1,75 @@
+.form-group{
+
+    width: 50%;
+}
+
+section{
+    // background: url(../../../assets/images/jeremy-bezanger-Ismh7gmABAc-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    flex-direction: column;
+    // border:2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form1{
+    margin-top: 5%;
+    width: 60%;
+    // border:2px solid black
+}
+
+
+.username{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userpic{
+    margin-left: 35%;
+}
+
+p{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    // color: aliceblue;
+}
+
+.navcolor{
+
+
+    background: rgb(59,46,51);
+    // background: linear-gradient(90deg, rgba(59,46,51,1) 27%, rgba(73,92,96,1) 79%, rgba(17,17,17,0.9196720924698004) 100%);
+
+}
+
+
+.col-3{
+    margin-right: 2%;
+}
+.container{
+    // border: 2px solid black;
+    margin-top: 10%;
+    max-width: 80%;
+    
+   
+}
+
+
+
+
+
+.card1{
+    // border: 2px solid black;
+    height: fit-content;
+        border: 2px solid rgb(239, 244, 241);
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    border-radius: 2%;
+}
+

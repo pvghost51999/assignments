@@ -1,0 +1,20 @@
+<div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+    <h3>Sign in here</h3>
+    <div *ngIf="error">
+        <p style="color: red;">{{message}}</p>
+    </div>
+    <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+        <div class="inputBox">
+            <input id="uname" type="text" formControlName="email" name="Email" required placeholder="Email"/>
+            <input id="pass" type="password" formControlName="password" name="Password" required
+                placeholder="Password"/>
+        </div> 
+        <input type="submit"value="Login"/>
+    </form>
+    <div class="text-center">
+        <a href="/register">
+            <p style="color: #59238F;">Sign-Up</p>
+        </a>
+    </div>
+
+</div>

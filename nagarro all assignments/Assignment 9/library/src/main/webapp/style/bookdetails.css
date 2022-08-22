@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+.but{
+	
+	width:fit-content;
+}
+.header{
+	    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.sec{
+	
+	margin-bottom:5%;
+}

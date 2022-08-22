@@ -1,0 +1,57 @@
+body{
+
+   
+    // background: url(../../../assets/images/jeremy-bezanger-Ismh7gmABAc-unsplash.jpg);
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+
+.username{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userpic{
+    margin-left: 35%;
+}
+
+p{
+    text-transform: capitalize;
+    margin-bottom: 0;
+    // color: aliceblue;
+}
+
+.navcolor{
+
+
+    background: rgb(59,46,51);
+    // background: linear-gradient(90deg, rgba(59,46,51,1) 27%, rgba(73,92,96,1) 79%, rgba(17,17,17,0.9196720924698004) 100%);
+
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  /* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+
+
+
+.container{
+    max-width: 90%;
+}
+

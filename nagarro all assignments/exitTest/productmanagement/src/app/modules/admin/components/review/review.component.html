@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<section>
+
+    <div class="card mt-3" *ngFor="let i of productArray">
+        <!-- <div *ngIf="success">
+                <p style="color: red;">SuccessFully Subitted!!</p>
+        </div> -->
+        <div class="row" *ngIf="i.status==false">
+            <div class="col-2"> <img src="https://i.ibb.co/yVGxFPR/2.png" width="70" class="rounded-circle mt-2"> </div>
+            <div class="col-10">
+            
+                <div class="comment-box ml-2">
+                    <h4>{{i.email}}</h4>
+           
+                        <ngb-rating [max]="5" [(rate)]="i.rating" style="color: rgb(90, 184, 39); font-size: 22px;"
+                        [readonly]="true"></ngb-rating>
+                        
+                        <div class="comment-area"> <textarea class="form-control"
+                                [value]="i.comment"  readonly></textarea> </div>
+                        <div class="comment-btns mt-2">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="pull-left"> <button routerLink="/user/products" class="btn btn-success btn-sm">reject</button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="pull-right">
+                                        <input type="submit" class="btn btn-success send btn-sm" (click)="approve(i)" value="approve" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

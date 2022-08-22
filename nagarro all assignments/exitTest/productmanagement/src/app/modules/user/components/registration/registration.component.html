@@ -1,0 +1,45 @@
+
+<body>
+<div class="container pt-4 pb-5 section"  >
+    <div *ngIf="error">
+        <p style="color: red;">*user already exists!!</p>
+    </div>
+    <form [formGroup]="regForm" (ngSubmit)="registration()">
+        <div class="text-center pt-3">
+            <p class="display-7 fw-bold">Create<span class="ps-1">account</span></p>
+            <small class="d-flex align-items-center justify-content-center mb-3">
+                <p class="text-muted">already have an account?</p>
+                <div class="btn btn-primary"><a routerLink="/login" style="color: white;"> sign in</a></div>
+            </small>
+        </div>
+        <div class="row px-md-4 px-1 m-0">
+            <div class="col-12">
+                <div>
+                    <input type="text" class=" name form-control mb-4" value="" formControlName ="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control mb-4" name="name" id="name" formControlName ="firstName" placeholder="First Name">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control mb-4" formControlName ="lastName" placeholder="last Name">
+            </div>
+            <div class="col-12">
+                <input type="password" class="form-control mb-4" name="password" id="pass" formControlName ="password" placeholder="Password">
+            </div>
+            <!-- <div class="col-12">
+                <input type="password" class="form-control mb-4" name="password" id="confirmpass" formControlName ="confirmpass" placeholder="Confirm Password">
+            </div> -->
+            <div class="col-12 create">
+                <div >
+                    <div class="d-flex align-items-center justify-content-between">
+                        <input type="submit" value="create your account" class="btn btn-primary py-3 ">
+                        <span class="fas fa-arrow-right "></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>

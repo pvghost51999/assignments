@@ -1,0 +1,25 @@
+.form-group{
+    
+    width: 60%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    // border:2px solid black;
+}
+
+form{
+    width: 40%;
+    border-radius: 4%;
+    // border:  2px solid black;
+    background: rgb(110,120,223);
+    background: linear-gradient(90deg, rgba(110,120,223,1) 34%, rgba(49,86,227,1) 64%, rgba(93,149,182,0.9196720924698004) 95%);
+  
+}
+
+label{
+    font-size: 1em;
+    font-weight: bold;
+}
